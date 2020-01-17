@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+
+body{
+    box-sizing: border-box;
+}
+
+nav{
+    background: #5a3957;
+    text-align: center;
+}
+
+nav ul{
+    display: inline-flex;
+    list-style: none;
+    color: aliceblue;
+}
+nav ul li
+{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.subMenu1{
+    display: none;
+}
+
+nav ul li:hover .subMenu1{
+    display: block;
+    position: absolute;
+    background: #5a3957;
+    margin-left: -15px;
+    margin-top: 10px;
+}
+nav ul li:hover {
+    background-color: cadetblue;
+}
+
+nav ul li:hover .subMenu1 ul{
+    display: block;
+    margin: 10px;
+}
+
+nav ul li:hover .subMenu1 ul li{
+    width:120px;
+    padding: 10px;
+    border-bottom: 2px dashed whitesmoke;
+    border-radius: 0;
+    text-align: left;
+}
+nav ul li:hover .subMenu1 ul li:last-child{
+    border-bottom: none;
+}
+nav ul li:hover .subMenu1 ul li:hover{
+    background-color: cadetblue;
+}
+
+
+.RecipeApi {
+    min-height: 100vh;
+    background-image: linear-gradient(to top, #ebbba7 0%, #cfc7f8 100%);
+}
+
+.searchForm{
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchBar{
+    width: 37%;
+    border: none;
+    padding: 10px;
+}
+
+.searchButton{
+    background: chocolate;
+    border: none;
+    padding: 10px 20px;
+    color: whitesmoke;
+
+}
+
+.recipes{
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+.Menu{
+    min-height: 100vh;
+    background-image: url('foodImg.jpg');
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.inMenu{
+    text-align: center;
+    height:500px;
+    background-color: #abffb5;
+    font-size:36px
+}
+
